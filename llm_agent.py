@@ -25,7 +25,7 @@ async def main():
         print("Tools available to the LLM:", [t.name for t in mcp_tools])
 
         # 3. Give Llama a natural-language prompt
-        user_prompt = "What is 12 plus 7?"
+        user_prompt = "I purchase 2 items during my trip one of 100 rupee and one of 500 , what is thier total?"
         messages = [{"role": "user", "content": user_prompt}]
 
         response = chat(
